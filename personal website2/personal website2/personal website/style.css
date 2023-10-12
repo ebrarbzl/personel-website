@@ -1,0 +1,523 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*,
+*::before,
+*::after{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+    border: 0;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding:0;
+    outline: none;
+    border: none;
+}
+
+.contanier{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    background-image: url(images/christin-hume-mfB1B1s4sMc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+   
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #865907;
+    border-radius: 10px 10px 10px 10px;
+    opacity:0.9;
+}
+
+.header-logo{
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid #000;
+    border-radius: 35px;
+    padding-bottom: 5px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin-left: 27px;
+}
+
+li:first-child{
+    margin-right: 70px;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links li a{
+    margin-left: 15px;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.nav-links li a:hover{
+    background: #fffdd0;
+}
+
+h1{
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: white;
+}
+
+.first-latter{
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: white;
+}
+
+/* ABOUT*/
+
+.about{
+    margin-bottom: 150px;
+}
+
+.about-title{
+    margin: 60px 0;
+}
+
+.about-title h2{
+    width: 100%;
+    text-align: center;
+    margin:  0 auto;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-title h2::after{
+    content: "" ;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+}
+
+.about-img{
+    width: 40%;
+}
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text{
+    width: 40%;
+}
+
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+}
+
+.about-text p{
+    font-size: 15px;
+    text-align: center;
+    color: #2c2727 ;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+
+  .skill-label {
+    flex: 1;
+  }
+
+  .skill-bar {
+    flex: 2;
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .skill-bar-fill {
+    background-color: #5f9ea0;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  /*PORTFOLİO*/
+
+  .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-item{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+  }
+
+  .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #5f9ea0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: azure;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+  }
+
+  .portfolio-item:hover .overlay{
+    top: 0;
+  }
+
+  .portfolio-item:hover img{
+    transform: scale(1.1);
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.review-image {
+    background-color: #F9F9F9;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-image img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px white;
+}
+
+.review-content {
+    padding: 20px;
+}
+
+.review-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review-content p {
+    font-size: 16px;
+    color: #333;
+}
+
+.reviews-title{
+    margin: 60px 0;
+}
+
+.reviews-title h2{
+    width: 100%;
+    text-align: center;
+    margin:  0 auto;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.reviews-title h2::after{
+    content: "" ;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/*CONTACT*/
+
+.contact{
+    padding: 10px 0;
+}
+
+.contact h2{
+    width: 100%;
+    text-align: center;
+    margin:  0 auto;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact h2::after{
+    content: "" ;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.contact-item i{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.contact-item p{
+    font-size: 14px;
+    line-height: 33px;
+}
+
+/*FOOTER*/
+
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin:  0 auto;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+
+.footer h2::after{
+    content: "" ;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: #865907;
+}
+
+.footer-copyright{
+    color: #F9F9F9;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social i{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 45px;
+}
+
+.footer-social:first-child{
+    margin-left: 70px;
+}
+ 
+#menu-icon{
+    font-size:25px ;
+    display: none;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        background-color: #865907;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
+    }
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-menu ul li a{
+        color:#F9F9F9;
+    }
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .about-img{
+        width: 100%;
+        margin-bottom: 30px;  
+    }
+    .about-text{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .portfolio .portfolio-item{
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .portfolio .portfolio-item{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-item{
+        margin-top: 30px;
+    }
+    .contact-item p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
